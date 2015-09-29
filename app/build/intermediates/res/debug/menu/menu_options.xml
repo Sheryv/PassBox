@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:compat="http://schemas.android.com/apk/res-auto"
+      >
+      <item android:id="@+id/mLock"
+            android:title="@string/lock"
+            android:icon="@drawable/ic_https_white_18dp"
+            compat:showAsAction="always"  />
+      <item android:id="@+id/exit"
+            android:title="@string/exit"
+            android:icon="@drawable/ic_exit"
+            compat:showAsAction="always"  />
+</menu>
+<!-- From: file:/D:/Android/SheryvPassBox/app/src/main/res/menu/menu_options.xml -->

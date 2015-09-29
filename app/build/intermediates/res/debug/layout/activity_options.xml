@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.sheryv.PassCrypt.Options">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/linearLayout" android:layout_below="@+id/o_autolock">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/optionsAbout"
+                android:id="@+id/textView5" android:padding="10dp"/>
+        <TextView
+                android:text="@string/optionsAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:paddingLeft="10dp"/>
+    </LinearLayout>
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/o_defaultLock"
+            android:id="@+id/o_autolock" android:layout_alignParentTop="true" android:layout_alignRight="@+id/linearLayout"
+            android:layout_alignEnd="@+id/linearLayout"
+            android:textSize="25sp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:paddingTop="@dimen/o_vertical_margin" android:paddingBottom="@dimen/o_vertical_margin"
+            android:width="20dp" android:elevation="0dp" android:height="80dp"
+            android:checked="false"/>
+
+
+</RelativeLayout>
+<!-- From: file:/D:/Android/SheryvPassBox/app/src/main/res/layout/activity_options.xml -->
