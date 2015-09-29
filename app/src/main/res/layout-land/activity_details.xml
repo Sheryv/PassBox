@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.sheryv.PassCrypt.DetailsActivity" android:orientation="horizontal">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_gravity="end" android:weightSum="1"
+            android:id="@+id/logins" android:layout_weight="0.6" android:layout_marginRight="10dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/logText" android:textSize="20sp"
+                  android:textColor="#FF6B80FF"
+                  android:background="@drawable/button"
+                  android:padding="5dp" android:layout_marginBottom="3dp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/button"
+
+                android:textColor="#FF6B80FF"
+                android:id="@+id/passText" android:textSize="20sp"
+                android:padding="5dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="25"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/log" android:singleLine="true" android:hint="@string/login"
+                android:lines="1"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:maxLength="25"
+                android:singleLine="true"
+                android:id="@+id/pass" android:hint="@string/pass"
+                android:lines="1" android:inputType="textPassword"/>
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="0.4">
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:maxLength="250"
+                android:id="@+id/desc" android:hint="@string/iDesc"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true" android:layout_above="@+id/modifiedText"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/modifiedText"
+                android:padding="3dp" android:text="@string/modified" android:layout_above="@+id/btnEdit"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/show" android:src="@drawable/ic_show"
+                android:contentDescription="@string/show"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" android:layout_alignTop="@+id/btnEdit"
+                android:scaleType="fitCenter" android:padding="10dp"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:onClick="editClick"
+                android:id="@+id/btnEdit"
+                android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/show"/>
+    </RelativeLayout>
+
+</LinearLayout>

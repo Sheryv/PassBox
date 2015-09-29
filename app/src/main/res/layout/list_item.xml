@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:tag="@string/item"
+              android:layout_width="match_parent"
+              android:background="@android:color/transparent"
+              android:layout_height="wrap_content" android:weightSum="1" android:id="@+id/list_item"
+                android:baselineAligned="false"
+        >
+
+<!--    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView8" android:layout_alignParentBottom="true" android:layout_alignParentTop="true"
+            android:background="@color/primary_material_dark" android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"/>-->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:id="@+id/relativeLayout" android:padding="3dp"
+            android:layout_toRightOf="@+id/textView7" android:layout_toEndOf="@+id/textView7">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/listItemTextL"
+                android:id="@+id/textView2"
+                android:gravity="start"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                android:padding="5dp" android:textSize="20sp" android:layout_alignParentStart="false"
+                android:layout_alignParentLeft="true"
+                android:layout_toStartOf="@+id/textView3" android:layout_toLeftOf="@+id/textView3"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/listItemTextR"
+                android:id="@+id/textView"
+                android:padding="5dp" android:textSize="20sp" android:gravity="end"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentEnd="false" android:layout_alignParentLeft="false"
+                android:visibility="gone"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/litemDate"
+                  android:id="@+id/textView3"
+                  android:gravity="end" android:textSize="13sp"
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/button_material_dark"
+                  android:layout_alignParentTop="true" android:paddingTop="5dp" android:paddingRight="5dp"
+                  android:paddingBottom="5dp"/>
+    </RelativeLayout>
+    <TextView android:layout_width="match_parent"
+              android:textSize="13sp"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/iDesc"
+              android:textColor="@color/primary_dark_material_light"
+              android:id="@+id/textView4"
+              android:gravity="start"
+              android:layout_below="@+id/relativeLayout" android:paddingLeft="7dp" android:paddingRight="7dp"
+              android:layout_toRightOf="@+id/textView7" android:layout_toEndOf="@+id/textView7"/>
+    <ImageView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:id="@+id/textView7"
+            android:background="@color/highlighted_text_material_dark"
+            android:layout_alignParentTop="false" android:layout_alignParentBottom="false"
+            android:layout_alignTop="@+id/relativeLayout" android:layout_alignBottom="@+id/textView4"/>
+</RelativeLayout>
