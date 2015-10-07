@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:compat="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/create_new"
+          android:title="@string/new_line"
+          android:icon="@drawable/ic_group_add"
+          compat:showAsAction="always"  />
+    <item android:id="@+id/mLock"
+          android:title="@string/lock"
+          android:icon="@drawable/ic_https_white_18dp"
+          compat:showAsAction="always"  />
+    <item android:id="@+id/exit"
+          android:title="@string/exit"
+          android:icon="@drawable/ic_exit"
+          compat:showAsAction="always"  />
+    <item android:id="@+id/save"
+          android:title="@string/save"
+          android:icon="@drawable/abc_ic_menu_selectall_mtrl_alpha"
+          compat:showAsAction="ifRoom"  />
+    <item android:id="@+id/settings"
+          android:title="@string/options"
+          android:icon="@drawable/ic_settings"
+          compat:showAsAction="ifRoom"  />
+    <item android:id="@+id/fill"
+          android:title="@string/addNew"
+          android:icon="@drawable/ic_settings"
+          compat:showAsAction="never"  />
+</menu><!-- From: file:/D:/Android/SheryvPassBox/src/main/res/menu/menu.xml -->
