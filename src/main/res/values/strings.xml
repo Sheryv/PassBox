@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PassCrypt</string>
+    <string name="app_name">PassBox</string>
     <string name="listItemTextR">Right Text</string>
     <string name="listItemTextL">Left Text</string>
     <string name="new_line">New</string>
     <string name="remove">Delete</string>
+    <string name="delete_mode">Delete Mode</string>
     <string name="login">Login</string>
     <string name="pass">Password</string>
     <string name="item">list_items</string>
@@ -28,11 +29,13 @@
     <string name="name">Name</string>
     <string name="modified">Last modified</string>
     <string name="add">Add group</string>
-    <string name="addNew">Add new entry</string>
+    <string name="add_profile">Add profile</string>
+    <string name="addNew">Add examl</string>
     <string name="success">Success</string>
     <string name="lock">Lock</string>
     <string name="favourite">Add/remove this group from favourites</string>
     <string name="delete_conf">Are you sure you want to delete this entry?</string>
+    <string name="delete_mode_required">You have to check on delete mode first</string>
     <string name="no">No</string>
     <string name="web">Website</string>
     <string name="accept">Accept</string>
@@ -45,16 +48,17 @@
     <string name="preference_file_key_sheryv">com.sheryv.PassCrypt</string>
     <string name="started">Started</string>
     <string name="pref_setup_done">pref_setup_done</string>
+    <string name="profile_name">Name should have at least 3 signs and does not contain special characters.</string>
     <string name="setup_welcome">Welcome to PassCrypt.\n Enter below your main password which will be used to encrypt
         your data. Should have at least 8 signs. Remember it because app won\'t be able to load your data without it, in particular,
         no one will able to. And you would have to add all your credentials again.
     </string>
     <string name="json_data">sheryvdata</string>
-    <string name="data_file_not_exist">Could not read file, probably does not exist! New set up</string>
+    <string name="data_file_not_exist">Could not read file, probably does not exist anymore! You should delete this entry.</string>
     <string name="data_lost_pass">If you lost your password, no one can decrypt your data. In this case you should
          create new profile again with new password and delete old data file. File location:
     </string>
-    <string name="data_old_file_exist">Old profile data file exist. You can use it (if you know password) or create new profile
+    <string name="data_old_file_exist">Old profile data file exist. You can use it (if you know password) or create new collection, override it
         and set up new password.
     </string>
     <string name="data_use_old">Use it</string>
@@ -63,17 +67,23 @@
     <string name="save">Save now</string>
     <string name="data_saved">Saved</string>
     <string name="data_altered">Incorrect password or data file was modified outside application and cannot be
-        decrypted! You can continue to make new empty profile. Later you will be able to choose profile.
+        decrypted! If you do not know password, create new profile.
     </string>
     <string name="got">Continue</string>
     <string name="d_info">Information</string>
     <string name="d_try_again">Try again</string>
     <string name="d_info_hide">Tap to hide</string>
     <string name="error_details">Error details:</string>
-    <string name="loading">Loading:</string>
+    <string name="loading">Loading..</string>
     <string name="loading_decrypting">decrypting</string>
     <string name="loading_hash">computing hash</string>
     <string name="loading_json">formating data</string>
     <string name="loading_encrypting">encrypting</string>
     <string name="title_activity_list_profile">list_profile</string>
+    <string name="data_save_failed">Saving failed. See error below. In case this problem repeats please report it on website. Website address is located at the bottom of welcome screen.</string>
+    <string name="data_save_fail_short">Save failed! Please try again.</string>
+    <string name="saving">Saving..</string>
+    <string name="add_example">Add example record</string>
+    <string name="sort_alfa">Sort alphabetically</string>
+    <string name="sort_favo">Sort by favourite</string>
 </resources>

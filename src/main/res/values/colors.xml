@@ -2,4 +2,6 @@
 <resources>
     <color name="group_name">#7fa87f</color>
     <color name="group_number">#ff4e9250</color>
+    <color name="selected">#ff135966</color>
+    <color name="transpar">#00000000</color>
 </resources>

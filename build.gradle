@@ -23,7 +23,7 @@ android {
         abortOnError false
     }
     defaultConfig {
-        applicationId "com.sheryv.PassCrypt"
+        applicationId "com.sheryv.PassBox"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1

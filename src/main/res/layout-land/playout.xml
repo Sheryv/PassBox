@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+        >
+
+
+<!--    <ListView
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:id="@+id/listView" />-->
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:background="@color/secondary_text_default_material_light"
+            android:layout_height="wrap_content" android:id="@+id/statusListL" android:layout_toLeftOf="@+id/scrollBtn" android:layout_toStartOf="@+id/scrollBtn">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/text_status" android:padding="2dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:layout_marginRight="16dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="@string/saving" android:id="@+id/text_status_saving" android:padding="2dp"
+                  android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_marginLeft="16dp" android:visibility="gone"/>
+        <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_saving" android:layout_alignBottom="@+id/text_status_saving" android:indeterminate="true" android:layout_toRightOf="@+id/text_status_saving" android:layout_toEndOf="@+id/text_status_saving" android:visibility="gone"/>
+    </RelativeLayout>
+    <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:childDivider="@color/primary_material_dark"
+            android:layout_below="@+id/statusListL" android:layout_toLeftOf="@+id/scrollBtn" android:layout_toStartOf="@+id/scrollBtn" android:layout_alignParentBottom="true"/>
+    <HorizontalScrollView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollBtn" android:layout_alignParentBottom="true" android:background="@color/primary_material_dark" android:scrollbars="none" android:fillViewport="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" android:gravity="center">
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:onClick="toolUp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton" android:src="@drawable/ic_move_up" android:background="@android:color/transparent" android:scaleType="fitCenter" android:paddingRight="4dp" android:paddingLeft="4dp" android:paddingTop="9dp" android:paddingBottom="9dp"/>
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageButton2"
+                         android:onClick="toolDown"
+                         android:src="@drawable/ic_move_down" android:background="@android:color/transparent" android:scaleType="fitCenter" android:paddingRight="4dp" android:paddingLeft="4dp" android:paddingTop="9dp" android:paddingBottom="9dp"/>
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageButton3"
+                         android:onClick="toolSelect"
+                         android:src="@drawable/ic_select" android:background="@android:color/transparent" android:scaleType="fitCenter" android:paddingRight="4dp" android:paddingLeft="4dp" android:paddingTop="9dp" android:paddingBottom="9dp"/>
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageButton4"
+                         android:onClick="toolSelectAll"
+                         android:src="@drawable/ic_select_all_white_36dp" android:background="@android:color/transparent" android:scaleType="fitCenter" android:paddingRight="4dp" android:paddingLeft="4dp" android:paddingTop="9dp" android:paddingBottom="9dp"/>
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageButton5"
+                         android:onClick="toolLock"
+                         android:src="@drawable/ic_https_white_18dp" android:scaleType="fitCenter" android:paddingRight="4dp" android:paddingLeft="4dp" android:paddingTop="9dp" android:paddingBottom="9dp" android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

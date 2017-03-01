@@ -33,7 +33,7 @@
         android:src="@drawable/ic_favourite_off"
         android:contentDescription="@string/favourite"
         android:padding="10dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true" android:layout_marginRight="5dp"/>
+        android:layout_marginRight="5dp"/>
     <TextView android:layout_width="match_parent"
               android:textSize="13sp"
               android:layout_height="wrap_content"
@@ -43,18 +43,18 @@
               android:gravity="start"
               android:maxLength="256"
               android:layout_below="@+id/g_name"
-              android:layout_toRightOf="@+id/g_link" android:paddingLeft="0dp"
+              android:layout_toRightOf="@+id/g_link" android:paddingLeft="2dp"
               android:paddingTop="6dp" android:paddingBottom="7dp"
               android:layout_toLeftOf="@+id/g_edit" android:layout_toStartOf="@+id/g_edit"
               android:layout_alignParentLeft="false"/>
     <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/litemDate"
             android:id="@+id/g_count"
             android:layout_toLeftOf="@+id/g_favourite" android:layout_toStartOf="@+id/g_favourite"
-            android:layout_centerVertical="true"/>
+            android:layout_alignBottom="@+id/g_favourite" android:layout_alignTop="@+id/g_favourite" android:paddingTop="15dp"/>
     <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,6 +74,10 @@
             android:layout_toLeftOf="@+id/g_add" android:layout_toStartOf="@+id/g_favourite"
             android:padding="5dp" android:scaleType="fitCenter"
             android:layout_marginRight="5dp" android:contentDescription="@string/edit" android:visibility="invisible"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/g_selectedCb" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:paddingLeft="40dp" android:paddingTop="10dp" android:paddingBottom="30dp" android:layout_alignParentTop="true" android:visibility="gone" android:checked="false"/>
     <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
